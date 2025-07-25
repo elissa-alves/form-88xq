@@ -65,24 +65,26 @@
   <h1>Form 88X-Q</h1>
   <h2>Feedback Interface for Mortal Visitors of Regulus, Mechanus</h2>
 
-  <form>
+  <form action="https://formspree.io/f/manbodwq" method="POST">
+    <input type="hidden" name="_redirect" value="thankyou.html" />
+
     <div class="question">
       <label>1. How would you rate your overall experience with the Modron Cathedral?</label>
       <div class="options">
-        <label><input type="radio" name="experience" /> Wonderfully Organized! I crave lawful symmetry now.</label>
-        <label><input type="radio" name="experience" /> Mind-blowing (can be in a “Good” or “Bad” or “Neutral” manner)</label>
-        <label><input type="radio" name="experience" /> I require emotional assistance.</label>
-        <label><input type="radio" name="experience" /> I require medical assistance.</label>
-        <label><input type="radio" name="experience" /> I am still processing what I have witnessed.</label>
+        <label><input type="radio" name="experience" value="Wonderfully Organized" /> Wonderfully Organized! I crave lawful symmetry now.</label>
+        <label><input type="radio" name="experience" value="Mind-blowing" /> Mind-blowing (can be in a “Good” or “Bad” or “Neutral” manner)</label>
+        <label><input type="radio" name="experience" value="Emotional assistance" /> I require emotional assistance.</label>
+        <label><input type="radio" name="experience" value="Medical assistance" /> I require medical assistance.</label>
+        <label><input type="radio" name="experience" value="Still processing" /> I am still processing what I have witnessed.</label>
       </div>
     </div>
 
     <div class="question">
       <label>2. Was your assigned divine analysis accurate?</label>
       <div class="options">
-        <label><input type="radio" name="analysis" /> Yes</label>
-        <label><input type="radio" name="analysis" /> No</label>
-        <label><input type="radio" name="analysis" /> Somewhat</label>
+        <label><input type="radio" name="analysis" value="Yes" /> Yes</label>
+        <label><input type="radio" name="analysis" value="No" /> No</label>
+        <label><input type="radio" name="analysis" value="Somewhat" /> Somewhat</label>
       </div>
     </div>
 
@@ -90,65 +92,65 @@
       <label>3. How did you enjoy your refreshments?</label>
       <div class="options">
         <strong>Water:</strong><br />
-        <label><input type="checkbox" name="water" /> Hydrating</label>
-        <label><input type="checkbox" name="water" /> Too wet</label>
-        <label><input type="checkbox" name="water" /> Not wet enough</label><br />
+        <label><input type="checkbox" name="water[]" value="Hydrating" /> Hydrating</label>
+        <label><input type="checkbox" name="water[]" value="Too wet" /> Too wet</label>
+        <label><input type="checkbox" name="water[]" value="Not wet enough" /> Not wet enough</label><br />
         <strong>Lime-infused Water:</strong><br />
-        <label><input type="checkbox" name="lime" /> Zesty!</label>
-        <label><input type="checkbox" name="lime" /> I did not like the lime</label>
-        <label><input type="checkbox" name="lime" /> I thought it was fine</label><br />
+        <label><input type="checkbox" name="lime[]" value="Zesty" /> Zesty!</label>
+        <label><input type="checkbox" name="lime[]" value="Disliked lime" /> I did not like the lime</label>
+        <label><input type="checkbox" name="lime[]" value="Fine" /> I thought it was fine</label><br />
         <strong>Coconut Bubble Bath:</strong><br />
-        <label><input type="checkbox" name="bath" /> 10/10</label>
-        <label><input type="checkbox" name="bath" /> Inaccurate coconut scent</label>
-        <label><input type="checkbox" name="bath" /> Did not enjoy</label><br />
+        <label><input type="checkbox" name="bath[]" value="10/10" /> 10/10</label>
+        <label><input type="checkbox" name="bath[]" value="Inaccurate scent" /> Inaccurate coconut scent</label>
+        <label><input type="checkbox" name="bath[]" value="Did not enjoy" /> Did not enjoy</label><br />
         <strong>Resonelle Music:</strong><br />
-        <label><input type="checkbox" name="music" /> Joyful</label>
-        <label><input type="checkbox" name="music" /> Haunting</label>
-        <label><input type="checkbox" name="music" /> Traumatic</label>
-        <label><input type="checkbox" name="music" /> Terrible</label>
-        <label><input type="checkbox" name="music" /> Neutral</label><br />
+        <label><input type="checkbox" name="music[]" value="Joyful" /> Joyful</label>
+        <label><input type="checkbox" name="music[]" value="Haunting" /> Haunting</label>
+        <label><input type="checkbox" name="music[]" value="Traumatic" /> Traumatic</label>
+        <label><input type="checkbox" name="music[]" value="Terrible" /> Terrible</label>
+        <label><input type="checkbox" name="music[]" value="Neutral" /> Neutral</label><br />
         <strong>Bathrobe:</strong><br />
-        <label><input type="checkbox" name="robe" /> Fluffy</label>
-        <label><input type="checkbox" name="robe" /> Comfortable</label>
-        <label><input type="checkbox" name="robe" /> Itchy fabric</label>
-        <label><input type="checkbox" name="robe" /> Cheaply made</label>
+        <label><input type="checkbox" name="robe[]" value="Fluffy" /> Fluffy</label>
+        <label><input type="checkbox" name="robe[]" value="Comfortable" /> Comfortable</label>
+        <label><input type="checkbox" name="robe[]" value="Itchy" /> Itchy fabric</label>
+        <label><input type="checkbox" name="robe[]" value="Cheap" /> Cheaply made</label>
       </div>
     </div>
 
     <div class="question">
       <label>4. Were you offered appropriate amenities during your stay?</label>
       <div class="options">
-        <label><input type="radio" name="amenities" /> Yes</label>
-        <label><input type="radio" name="amenities" /> No</label>
-        <label><input type="radio" name="amenities" /> Somewhat</label>
+        <label><input type="radio" name="amenities" value="Yes" /> Yes</label>
+        <label><input type="radio" name="amenities" value="No" /> No</label>
+        <label><input type="radio" name="amenities" value="Somewhat" /> Somewhat</label>
       </div>
     </div>
 
     <div class="question">
       <label>5. Did you encounter any of the following during your visit?</label>
       <div class="options">
-        <label><input type="checkbox" name="issues" /> Mismatching metallics</label>
-        <label><input type="checkbox" name="issues" /> Emotional disturbance</label>
-        <label><input type="checkbox" name="issues" /> Long wait time</label>
-        <label><input type="checkbox" name="issues" /> Inadequate hospitality</label>
-        <label><input type="checkbox" name="issues" /> Physical injury</label>
-        <label><input type="checkbox" name="issues" /> Unpleasant clerk at Department of Mortal Entry Protocols</label>
-        <label><input type="checkbox" name="issues" /> Negative encounter with a Modron or Inevitable</label>
+        <label><input type="checkbox" name="issues[]" value="Mismatching metallics" /> Mismatching metallics</label>
+        <label><input type="checkbox" name="issues[]" value="Emotional disturbance" /> Emotional disturbance</label>
+        <label><input type="checkbox" name="issues[]" value="Long wait time" /> Long wait time</label>
+        <label><input type="checkbox" name="issues[]" value="Inadequate hospitality" /> Inadequate hospitality</label>
+        <label><input type="checkbox" name="issues[]" value="Physical injury" /> Physical injury</label>
+        <label><input type="checkbox" name="issues[]" value="Rude clerk" /> Unpleasant clerk at Department of Mortal Entry Protocols</label>
+        <label><input type="checkbox" name="issues[]" value="Negative Modron encounter" /> Negative encounter with a Modron or Inevitable</label>
       </div>
     </div>
 
     <div class="question">
       <label>6. Did you accomplish your intended goals?</label>
       <div class="options">
-        <label><input type="radio" name="goals" /> Yes</label>
-        <label><input type="radio" name="goals" /> Mostly</label>
-        <label><input type="radio" name="goals" /> No</label>
+        <label><input type="radio" name="goals" value="Yes" /> Yes</label>
+        <label><input type="radio" name="goals" value="Mostly" /> Mostly</label>
+        <label><input type="radio" name="goals" value="No" /> No</label>
       </div>
     </div>
 
     <div class="question">
       <label>Optional Comments:</label>
-      <textarea placeholder="Speak into the Whisper Cube or write here..."></textarea>
+      <textarea name="comments" placeholder="Speak into the Whisper Cube or write here..."></textarea>
     </div>
 
     <div class="submit">
